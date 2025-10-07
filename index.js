@@ -15,7 +15,7 @@ let addDepoit = () => {
         { beforeBalance:balance, amount:amount, type:'deposit', afterBalance:balance+amount},
     )
     balance = balance + amount
-    showHistory();
+    // showHistory();
     showBalance();
     input.value=""
 }
@@ -27,7 +27,7 @@ removrWithdraw = () => {
             {beforeBalance:balance, amount:amount, type:'withdrow', afterBalance:balance-amount},
         )
         balance = balance - amount
-        showHistory();
+        // showHistory();
         showBalance ()
         input.value=""
     }else{

@@ -11,20 +11,24 @@
     <link rel="stylesheet" href="./index.css">
 
 </head>
-<body>
-  <div class="container p-3">
-    <div class="col-6 p-3 border shadow bg-white rounded d-flex flex-wrap gap-3" >
-      <div class=" d-flex align-items-center gap-3">
-        <h1>Your Balance Is :<span id="showBalance" >----</span></h1>
-        <button onclick="showBalance()" class="btn btn-primary">Show Balance</button>
+<body class=" d-flex align-items-center justify-content-center">
+  <div >
+    <div class="container col-12 p-5 d-flex flex-column flex-wrap gap-3 align-items-center justify-content-center " >
+      <div class=" d-flex flex-column gap-3 align-items-center justify-content-center">
+        <h1 class="m-0 p-0">Your Balance Is : <span id="showBalance" >.....</span></h1>
+        <button  onclick="showBalance()" style="background-color: #6a0194 ; border: none; color:black ; font-weight: 700; letter-spacing: normal; padding:13px 10px" class="col-5 btn btn-primary">Show Balance</button>
       </div>
-      <div class='col-12 d-flex gap-3'>
-        <input placeholder="Enter Amount" class="form-control"/>
-        <button id="deposit" class="btn btn-warning" onclick="addDepoit()">Deposit  </button>
-        <button id =" withdraw"class="btn btn-danger" onclick = "removrWithdraw()">Withdraw </button>
-        <button class="btn btn-dark" onclick="showHistory()">Show History</button>
+      <div class='col-12 d-flex  gap-3'>
+        <input placeholder="Enter Amount" class="form-control"/><br/>
       </div>
-      <table class="table table-dark">
+      <div> 
+        <button id="deposit" class=" btn btn-success" style="background-color: #e6683c ; border: none;  color:black ; font-weight: 700; letter-spacing: normal;padding:13px 10px" onclick="addDepoit()">Deposit  </button>
+        <button id =" withdraw"class="btn btn-danger" style="background-color: #e6683c ; border: none;  color:black ; font-weight: 700; letter-spacing: normal;padding:13px 10px"onclick = "removrWithdraw()">Withdraw </button>
+      </div>
+      <div>  
+        <button class="btn btn-dark" style="background-color: #6a0194 ; border: none;  color:black ; font-weight: 700; letter-spacing: normal;padding:13px 10px" onclick="showHistory()">Show History</button>
+      </div>
+      <table class="table table-bordered  " style="border: solid 3px #8600bd" >
         <thead>
           <tr>
             <th>#</th>
@@ -47,6 +51,13 @@
 
     </div>
   </div>
+  <!-- From Uiverse.io by cssbuttons-io --> 
+
+  <!-- <div class="custom-shape-divider-top-1759805418">
+    <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none">
+        <path d="M985.66,92.83C906.67,72,823.78,31,743.84,14.19c-82.26-17.34-168.06-16.33-250.45.39-57.84,11.73-114,31.07-172,41.86A600.21,600.21,0,0,1,0,27.35V120H1200V95.8C1132.19,118.92,1055.71,111.31,985.66,92.83Z" class="shape-fill"></path>
+    </svg>
+</div> -->
 <script src="./index.js"></script>
 </body>
 </html> 
