@@ -7,13 +7,19 @@ body{
     /* background-color: #8600bd; */
     width:100wh;
     height:100vh;
-    background: linear-gradient(135deg, #ee912d, #e6683c, #ad1e34, #a21b51, #8600bd);
+    background: linear-gradient(90deg, #ee912d, #e6683c, #ad1e34, #a21b51, #8600bd);
     .container{
         background-color: #f5eff8;
         border-radius: 45px;
         background: linear-gradient(315deg, #cacaca, #f0f0f0);
         box-shadow:  -21px -21px 41px #a8a8a8,
         21px 21px 41px #ffffff;
+         @media screen and (max-width:767px ){
+                width: 90%;  
+                padding:0;
+              
+            }
+
     }
 }
 
